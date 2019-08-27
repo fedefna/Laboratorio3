@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documento</title>
+</head>
+
+<body>
+
+
+    <!-- Controles HTML. PlaceHolder texto que aparece en el inputText -->
+    <!-- 2 formas de hacer lo mismo -->
+    <!-- primera -->
+    <!-- si uso el for y el id al hacer click en el label se pone el cursor en el input -->
+    <label for="txtNombre">Nomb</label>
+    <input type="text" id="txtHolder" placeholder="Ingrese Nombre">
+    <!-- Segunda -->
+    <br>
+    <label>Nomb
+        <input type="text" id="txtHolder" placeholder="Ingrese Nombre">
+    </label>
+    <!-- Fieldset te recuadra todo -->
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <p>
+            <label>Nombre
+                <input type="text" id="txtHolder" placeholder="Ingrese Nombre">
+            </label>
+        </p>
+        <p>
+            <label>Apellido
+                <input type="text" id="txtHolder" placeholder="Ingrese Nombre">
+            </label>
+        </p>
+        <p>
+            <label>Password
+                <input type="password" id="txtHolder" placeholder="Ingrese Nombre">
+            </label>
+        </p>
+    </fieldset>
+
+
+</body>
+
+</html>
