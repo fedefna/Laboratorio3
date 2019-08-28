@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/script.js"></script>
+    <title>Controles</title>
+
+    
+
+</head>
+
+<body>
+    <form action="./pagina2.html" method="GET">
+
+        <!-- Fieldset te recuadra todo -->
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div>
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" id="txtNombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="txtClave">Contraseña:</label>
+                <input type="password" id="txtClave" name="clave" required placeholder="Ingrese pw aqui!">
+            </div>
+            <div>
+                <label for="txtEmail">Email:</label>
+                <input type="email" id="txtEmail" name="mail" required>
+            </div>
+            <div>
+                <label for="txtEdad">Edad:</label>
+                <input type="range" id="txtEdad" name="edad" min="18" max="65" required>
+            </div>
+            <div>
+                <label for="cboPais">Pais:</label>
+                <select name="pais" id="cboPais">
+                    <optgroup label="America">
+                        <option value="Argnetina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Chiñe">Chile</option>
+                        <option value="Peru">Peru</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="España">España</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Italia">Italia</option>
+                        <option value="Alemania">Alemania</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <input type="hidden" name="">
+
+            <fieldset>
+                <legend>Genero</legend>
+                <input type="radio" name="sexo" id="rdoMasculino">
+                <label for="rdoMasculino">Masculino</label>
+                <input type="radio" name="sexo" id="rdoFemenino">
+                <label for="rdoFemenino">Femenino</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Hobbies:</legend>
+                <input type="checkbox" name="hobbie" id="chkEsqui">
+                <label for="chkEsqui">Esqui</label>
+                <input type="checkbox" name="hobbie" id="chkKayak">
+                <label for="chkKayak">Kayak</label>
+                <input type="checkbox" name="hobbie" id="chkBicicleta">
+                <label for="chkBicicleta">Bicicleta</label>
+            </fieldset>
+
+            <label for="taComentarios">Comentarios:</label>
+            <div>
+                <textarea name="" id="taComentarios" cols="30" rows="10"></textarea>
+            </div>
+
+            <input type="submit" value="loguin">
+            <!-- Reestablece todo el formulario incluso al input hidden -->
+            <input type="reset" value="Restablecer formulario">
+
+            
+        </fieldset>
+
+    </form>
+    <button id="btnSaludar">Saludar</button>
+</body>
+
+</html>
