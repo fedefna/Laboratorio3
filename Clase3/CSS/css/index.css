@@ -1,0 +1,25 @@
+/*Apunto a todo lo que quiero*/
+p,h1,#Pepito{
+    color:darkred;
+}
+/*Apunto a un ID*/
+#miparrafo{
+    color:darkgreen;
+}
+
+/*Apunto a una clase*/
+.azul{
+    color: blue;
+}
+
+body{
+    /*Puedo hacer aparecer la barra lateral*/
+    height: 5000px;
+    /*Deja la imagen de fondo fija al scrollear*/
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("../img/blog4.jpg");
+    /*para que no se repita la foto tipo collage*/
+    background-repeat: no-repeat;
+    
+}

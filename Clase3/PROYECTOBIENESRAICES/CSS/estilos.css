@@ -1,0 +1,73 @@
+body{
+    /*Defino en cuantas lineas separo*/
+    line-height: 2;
+    /*En google fonts hay fuentes gratuitas*/
+    font-family: 'Lato', sans-serif;
+}
+
+
+.site-header{
+    background:url("../img/header.jpg");
+
+    /*la altura del encabezado va a ser del 100% de la pantalla*/
+    height: 100vh;
+
+    /*Centrar la foto*/
+    background-position: center center;
+
+    /*Cubrir el tamaño disponible del contenedor con la foto*/
+    background-size: cover;
+
+}
+
+
+.contenido-header{
+    height: 100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.site-header h1{
+    color: white;
+
+    padding-bottom: 30px;
+    max-width: 600px;
+}
+
+
+.barra{
+    /*Flex te hace todo responsive perro*/
+    display: flex;
+    /*Indico de que forma se van a separar los elementos de la barra*/
+    justify-content: space-between;
+    /*Alineo los items centrados*/
+    align-items: center;
+    /*em y rem son valores de tamaños. EM es el tamaño de una M mayusc y REM es aprox 32px*/
+    padding: 2rem;
+}
+
+/*Asi afecto a todos los enlaces que esten dentro de la clase navegacion*/
+.navegacion a{
+    /*Saco el subrrayado por defecto*/
+    text-decoration: none;
+    /*Cambio color*/
+    color: white;
+    margin-right: 10px;
+}
+
+.navegacion a:last-of-type{
+    margin:0px;
+}
+
+.navegacion a:hover{
+    color:darkgreen;
+}
+
+
+/*Clase contenedor*/
+.contenedor{
+    /*Limito el ancho*/
+    max-width: 1200px;
+    margin: 0 auto; 
+}
